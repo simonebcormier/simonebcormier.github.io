@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Simone Cormier</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1b2553ec7.js" crossorigin="anonymous"></script>
+    <style>
+        body { background: #0f1f2e; color: #fff; }
+        .resume-main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 16px 40px 16px;
+        }
+        .resume-title {
+            font-size: 2.6rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+        .resume-section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 48px 0 24px 0;
+            border-bottom: 3px solid #4a90e2;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+        .resume-entry {
+            margin-bottom: 40px;
+            border: 2px solid #4a90e2;
+            border-radius: 14px;
+            padding: 24px 24px 16px 24px;
+            background: rgba(30, 50, 90, 0.10);
+            box-shadow: 0 4px 16px rgba(74,144,226,0.06);
+        }
+        .resume-entry-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 8px;
+        }
+        .resume-entry-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .resume-entry-company {
+            font-size: 1.1rem;
+            color: #b0c4d8;
+            font-weight: 500;
+            margin-left: 12px;
+        }
+        .resume-entry-date {
+            font-size: 1.1rem;
+            color: #4a90e2;
+            font-weight: 500;
+            margin-left: auto;
+        }
+        .resume-entry-bullets {
+            margin: 16px 0 0 0;
+            padding-left: 24px;
+        }
+        .resume-entry-bullets li {
+            margin-bottom: 8px;
+            font-size: 1.08rem;
+            line-height: 1.6;
+        }
+        .resume-entry-actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 12px;
+        }
+        .resume-readmore-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #4a90e2;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 7px 18px;
+            border-radius: 7px;
+            border: none;
+            box-shadow: 0 2px 8px rgba(74,144,226,0.10);
+            transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+            text-decoration: none;
+        }
+        .resume-readmore-btn:hover {
+            background: #357abd;
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(74,144,226,0.18);
+            transform: translateY(-2px) scale(1.03);
+        }
+        @media (max-width: 600px) {
+            .resume-main { padding: 32px 4vw 24px 4vw; }
+            .resume-title { font-size: 2rem; }
+            .resume-section-title { font-size: 1.3rem; }
+            .resume-entry-title { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" class="header-logo-text">Simone Cormier</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"> PORTFOLIO</a></li>
+                    <li><a href="resume.html"> RESUME</a></li>
+                    <li><a href="about.html"> ABOUT ME</a></li>
+                    <li><a href="contact.html"> CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <main class="resume-main">
+        <div class="resume-title">Resume</div>
+        <div style="display: flex; justify-content: center; margin-bottom: 32px;">
+            <a href="SimoneCormier_Resume.pdf" download="SimoneCormier_Resume.pdf" class="resume-btn">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Download Resume</span>
+            </a>
+        </div>
+        <div class="resume-section-title">Work Experience</div>
+
+        <div class="resume-entry">
+            <div class="resume-entry-header">
+                <span class="resume-entry-title">Shroombound - Unreal Engine</span>
+                <span class="resume-entry-date">Feb 2025 - Current</span>
+            </div>
+            <ul class="resume-entry-bullets">
+                <li>Developed UI poison vignette effect and bounce mushroom material visual effect using Unreal Engine's material system to support immersive UI and gameplay feedback</li>
+                <li>Implemented all front end, main menu, end menu, pause menu, and HUD using UMG and shaders for enhanced visual fidelity and responsiveness</li>
+                <li>Integrated VFX and animations into the game</li>
+                <li>Designed and implemented UI animations for crosshair and text popups using Unreal's animation tools to improve usability and guide player attention</li>
+            </ul>
+            <div class="resume-entry-actions">
+                <a href="Shroombound.html" class="resume-readmore-btn" target="_blank">
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="resume-entry">
+            <div class="resume-entry-header">
+                <span class="resume-entry-title">UX Researcher</span>
+                <span class="resume-entry-company">Canada Revenue Agency (Ottawa, ON)</span>
+                <span class="resume-entry-date">May 2022 - May 2023</span>
+            </div>
+            <ul class="resume-entry-bullets">
+                <li>Prototyped interactive learning platforms using Adobe XD, HTML, CSS and CSS to support internal employee training</li>
+                <li>Conducted user testing and translated findings into actionable UI/UX improvements</li>
+                <li>Collaborated with cross-functional teams to iterate on layouts, interaction flows, and accessibility in an agile workflow using Jira</li>
+            </ul>
+        </div>
+
+        <div class="resume-entry">
+            <div class="resume-entry-header">
+                <span class="resume-entry-title">UX Designer</span>
+                <span class="resume-entry-company">Wind River Systems (Ottawa, ON)</span>
+                <span class="resume-entry-date">Sept 2021 - January 2022</span>
+            </div>
+            <ul class="resume-entry-bullets">
+                <li>Developed wireframes and rapid UX/UI prototypes in Adobe XD for responsive software interfaces</li>
+                <li>Iterated designs based on user feedback and testing insights</li>
+                <li>Worked closely with developers and production teams to implement polished, user-focused UI solutions</li>
+            </ul>
+        </div>
+
+        <div class="resume-section-title">Other Projects</div>
+
+        <div class="resume-entry">
+            <div class="resume-entry-header">
+                <span class="resume-entry-title">Slipstream – Unity</span>
+                <span class="resume-entry-date">Oct 2024 – Feb 2025</span>
+            </div>
+            <ul class="resume-entry-bullets">
+                <li>Designed and implemented character and gameplay VFX to create speed lines using Unity's Shader Graph to enhance visual feedback and player immersion</li>
+                <li>Created character trick animations using Unity's animation system and scripting to support responsive gameplay</li>
+                <li>Implemented functional HUD systems such as health and special ability bars and integrated win/lose screen UI elements to support gameplay feedback and state transitions</li>
+            </ul>
+            <div class="resume-entry-actions">
+                <a href="Slipstream.html" class="resume-readmore-btn" target="_blank">
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="resume-entry">
+            <div class="resume-entry-header">
+                <span class="resume-entry-title">LUMI – Unity</span>
+                <span class="resume-entry-date">Oct 2022 – May 2023</span>
+            </div>
+            <ul class="resume-entry-bullets">
+                <li>Developed and integrated main menu, pause menu, HUD and end screen interfaces with full game state functionality</li>
+                <li>Developed particle systems, including god ray effects, to support environmental storytelling</li>
+                <li>Built a minimap system with player tracking and full-screen map toggle across four levels</li>
+                <li>Designed and implemented a dialogue UI system for interactive character conversations</li>
+                <li>Created UI animations and visual effects to enhance user feedback and interface transitions</li>
+            </ul>
+            <div class="resume-entry-actions">
+                <a href="LUMI.html" class="resume-readmore-btn" target="_blank">
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+    <section class="footer">
+        <div class="footer-color">
+            <h3>Simone Cormier - Programmer and Designer</h3>
+            <p>simoneblcormier@gmail.com</p>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/simone-cormier/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://simonecormier.itch.io/" target="_blank">
+                    <i class="fa-brands fa-itch-io"></i>
+                    <span>Itch.io</span>
+                </a>
+                <a href="https://github.com/simonebcormier" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
