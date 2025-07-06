@@ -194,6 +194,35 @@ nav .fa-solid {
     display: none;
 }
 
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #4a90e2;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(74,144,226,0.10);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.resume-btn:hover {
+    background: #357abd;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(74,144,226,0.18);
+    transform: translateY(-2px) scale(1.03);
+    text-decoration: none;
+}
+
+.resume-btn i {
+    font-size: 1.2em;
+}
+
 /*------------footer----------*/
 
 .footer{
@@ -214,16 +243,62 @@ nav .fa-solid {
     opacity: 0.9;
 }
 
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.icons a:hover {
+    background-color: rgba(74, 144, 226, 0.1);
+    border-color: #4a90e2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+}
+
 .icons .fa, i{
     cursor: pointer;
-    font-size: 2em;
-    margin: 10px;
+    font-size: 1.5em;
     transition: all 0.3s ease;
 }
 
 .icons .fa:hover, i:hover {
     color: #4a90e2;
-    transform: translateY(-2px);
+}
+
+.icons span {
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.icons .resume-btn {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 8px rgba(74,144,226,0.10);
+}
+
+.icons .resume-btn:hover {
+    background: #357abd;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(74,144,226,0.18);
+    transform: translateY(-2px) scale(1.03);
 }
 
 /*------------sections----------*/

@@ -17,6 +17,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         
         <script src="https://kit.fontawesome.com/a1b2553ec7.js" crossorigin="anonymous"></script>
+        <script>
+            function downloadResume() {
+                const link = document.createElement('a');
+                link.href = 'SimoneCormier_Resume.pdf';
+                link.download = 'SimoneCormier_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        </script>
         
         
     </head>
@@ -37,10 +47,26 @@
             </nav>
             
             <div class="head-image">
-        
                 <h1>Simone Cormier</h1>
-                <h2>Gameplay Programmer - UI Programmer - UI/UX Designer</h2>
-
+                <h2>Technical Artist - UI Programmer</h2>
+                <div class="icons" style="margin-top: 32px;">
+                    <a href="javascript:void(0)" onclick="downloadResume()" class="resume-btn">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        <span>Download Resume</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/simone-cormier/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://simonecormier.itch.io/" target="_blank">
+                        <i class="fa-brands fa-itch-io"></i>
+                        <span>Itch.io</span>
+                    </a>
+                    <a href="https://github.com/simonebcormier" target="_blank">
+                        <i class="fa-brands fa-square-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
             </div>
 
         </section>
@@ -64,7 +90,7 @@
                                 <a href="Shroombound.html">
                                     <img src="images/shroombound/shroombound-photo7.png" alt="Shroombound Game Cover">
                                     <div class="overlay">
-                                        <figcaption>Shroom Bound (WIP)<br><figunder>Technical Artist - UI Programmer</figunder></figcaption>
+                                        <figcaption>Shroom Bound (WIP)<br><figunder>Technical Artist - UI Programmer - Gameplay Programmer</figunder></figcaption>
                                     </div>
                                 </a>
                             </figure>
@@ -77,7 +103,7 @@
                                 <a href="Slipstream.html">
                                     <img src="images/slipstream/slipstreamcover.png" alt="Slipstream Game Cover">
                                     <div class="overlay">
-                                        <figcaption>Slipstream<br><figunder>Programmer</figunder></figcaption>
+                                        <figcaption>Slipstream<br><figunder>Technical Artist - UI Programmer - Gameplay Programmer</figunder></figcaption>
                                     </div>
                                 </a>
                             </figure>
@@ -90,7 +116,7 @@
                                 <a href="LUMI.html">
                                     <img src="images/lumi-cover.png" alt="Lumi Game Cover">
                                     <div class="overlay">
-                                        <figcaption>LUMI<br><figunder>Programmer - Level Designer</figunder></figcaption>
+                                        <figcaption>LUMI<br><figunder>UI Programmer - Gameplay Programmer</figunder></figcaption>
                                     </div>
                                 </a>
                             </figure>
@@ -465,9 +491,11 @@
                      <div class="icons">
                          <a href="https://www.linkedin.com/in/simone-cormier/" target="_blank">
                              <i class="fa-brands fa-linkedin"></i>
+                             <span>LinkedIn</span>
                          </a>
                          <a href="https://simonecormier.itch.io/" target="_blank">
                              <i class="fa-brands fa-itch-io"></i>
+                             <span>Itch.io</span>
                          </a>
                      </div>
                  </div>
@@ -477,5 +505,6 @@
 
 </body>
 </html>
+
 
 
