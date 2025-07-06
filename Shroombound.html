@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simone Cormier</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/a1b2553ec7.js" crossorigin="anonymous"></script>
+        
+        
+    </head>
+    
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html" class="header-logo-text">Simone Cormier</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html"> PORTFOLIO</a></li>
+                        <li><a href="about.html"> ABOUT ME</a></li>
+                        <li><a href="contact.html"> CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+        </section>
+
+        <section class="body">
+            <div class="cover-shroombound">
+
+                <div class="content">
+                    <div class="group-content">
+
+                        <div class="project-info">
+
+                            <div class="content-header">
+                                <h1>Shroom Bound(WIP)</h1>
+                            </div>
+
+                            <div class="overview-sections">
+
+                                <h2>High Concept</h2>
+                                <p>
+                                    Shroom Bound is a 3rd Person, 3D environmental obstacle platformer where you play as an explorer [codename: Nova] as they search for a mysterious powersource on an alien planet. Nova must learn to bend the new environment to their will by platforming on the giant mushrooms that make up the majority of the landscape and by using their trusty Device of Teleportation (D.O.T.). Not only does D.O.T. allow the player to teleport to its location, but it can be used to slash through weaker flora, of course, D.O.T. is only as useful as the player is skilled, in order to use any of D.O.Ts capabilities the player needs to know exactly where to throw it. Player's will need to master both D.O.T. and  their environment in order to find their way to the enormous mushroom powering the whole planet and complete their contract.
+                                </p>
+
+                                <div class="video-container">
+                                    <video width="800" height="520" autoplay muted loop>
+                                        <source src="images/shroombound/shroombound-covervideo.mp4" type="video/mp4">
+                                    </video>
+                                    <!--
+                            <button onclick="window.open('https://al-ozorio.itch.io/slipstream','_blank')">
+                                Itch.io
+                            </button>
+                            -->
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="overview">
+
+                            <div class="responsibilities">
+
+                                <h2>Project Info</h2>
+
+                                <ul>
+                                    <li><b>Project: </b>VFS Final Project</li>
+                                    <li><b>Role: </b>Technical Artist, UI Programmer</li>
+                                    <li><b>Engine: </b>Unreal</li>
+                                    <li><b>Programming Languages: </b>C++</li>
+
+                                </ul>
+
+                                <h2>Responsibilities</h2>
+
+                                <ul>
+                                    <li id="link"><a href="#shaders1">Poison Screen Post-Process Effect</a></li>
+                                    <li id="link"><a href="#shaders2">Poison Helmet Effect</a></li>
+                                    <li id="link"><a href="#shaders3">Mushroom Material Effect</a></li>
+                                    <li>Game optimizations using Unreal Profiler Tool</li>
+                                    <li>Created tools for designers to design, create and test gameplay</li>
+                                    <li id="link"><a href="#aiming">Aiming and crosshair functionality</a></li>
+                                    <li>Character health and poison system</li>
+                                    <li id="link"><a href="#toolimp">Boomerang implementation (DOT)</a></li>
+                                    <li id="link"><a href="#uiimp">UI implementation</a></li>
+                                    <li id="link"><a href="#animimp">Animation Implementation</a></li>
+                                    <li>Feature prototyping and iterations</li>
+                                    <li>Project planning and organizing through Jira</li>
+                                    <li id="link"><a href="#tutimp">Game tutorialization</a></li>
+                                    <li>Implemented floating mushroom system for river level</li>
+                                    <li>Build master, made sure team followed correct workflow on Git and organized folder structures</li>
+                                    <li>Worked closely with designers to create blueprint functions through C++</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--SECTIONS-->
+
+            <div class="background-col-section" id="shaders1">
+                <div class="respo-section1">
+                    <div class="respo-section-text">
+                        <h1>Poison Screen Post-Process Effect</h1>
+                        <ul>
+                            <li>Created a unified post-process material in Unreal Engine to visually represent the player's poisoned state.</li>
+                            <li>Combined a dynamic colored vignette, animated toxic smoke, and chromatic aberration into a single layered effect.</li>
+                            <li>The vignette darkens and closes in as poison severity increases, simulating tunnel vision.</li>
+                            <li> Animated noise textures create swirling, creeping smoke at the screen edges, with density and speed scaling to poison level.</li>
+                            <li>Separated and offset color channels over time to produce a hallucinogenic, color-fringing distortion.</li>
+                            <li>All effect parameters are exposed for real-time tuning and escalation during gameplay.</li>
+                            <li> Optimized for performance to ensure smooth real-time rendering.</li>
+                        </ul>
+                    </div>
+                    <div class="respo-section2-image">
+                        <video autoplay muted loop>
+                            <source src="images/shroombound/shroombound-poisoneffect.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-col-section" id="shaders2">
+                <div class="respo-section2">
+                    <div class="respo-section2-image">
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-helmetshader.png" alt="Shroombound Screenshot">
+                        </div>
+                    </div>
+                    <div class="respo-section-text">
+                        <h1>Poison Helmet Effect</h1>
+                        <ul>
+                            <li>Created a dynamic shader effect that visually fills the player's helmet with animated smoke as their poison level increases.</li>
+                            <li>Used a mask and animated noise textures to simulate volumetric, swirling smoke that rises from the bottom of the helmet, with fill amount directly tied to the player's poison status.</li>
+                            <li>Exposed parameters for smoke color, opacity, and animation speed, allowing for real-time adjustment and tuning.</li>
+                            <li>Developed a similar effect for the player's backpack using VFX, synchronizing the smoke fill and animation to match the helmet for cohesive visual feedback.</li>
+                            <li>Both effects provide clear, immersive feedback on the player's condition, enhancing gameplay clarity and atmosphere.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-col-section" id="shaders3">
+                <div class="respo-section1">
+                    <div class="respo-section-text">
+                        <h1>Mushroom Material Effect</h1>
+                        <ul>
+                            <li>Developed a custom material shader in Unreal Engine to give mushrooms a dynamic, bouncy visual effect when interacted with.</li>
+                            <li>Used the mushroom's world position and a configurable center point to calculate distance-based deformation, creating a squash-and-stretch effect localized to the area of impact.</li>
+                            <li>Applied a clamped, radius-based falloff so only the area near the interaction point deforms, preserving the rest of the mesh.</li>
+                            <li>Integrated a texture sample to add surface detail and enhance the organic look of the deformation.</li>
+                            <li>Exposed parameters for bounce radius, impact strength, and deformation intensity, allowing for real-time tuning and variation across different mushroom types.</li>
+                        </ul>
+                    </div>
+                    <div class="respo-section2-image">
+                        <video autoplay muted loop>
+                            <source src="images/shroombound/shroombound-bounceeffect.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-col-section" id="aiming">
+                <div class="respo-section2">
+
+                    <div class="respo-section2-image">
+                        <video width="640" height="360" autoplay muted loop>
+                            <source src="images/shroombound/shroombound-crosshair.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="respo-section2-text">
+                        <h1>Aiming and crosshair functionality</h1>
+                        <ul>
+                            <li>Implemented a responsive aiming system that transitions smoothly between normal and aim modes using timelines and camera adjustments.</li>
+                            <li>Designed and implemented animated crosshair UI elements that visually respond to player actions, such as rotating and expanding when aiming at interactable targets, providing clear and engaging feedback during gameplay.</li>
+                            <li>Designed a dynamic crosshair system: the crosshair appears, grows, or resets based on player actions and context-sensitive raycasts (ex. when targeting interactable objects).</li>
+                            <li>Created a modular HUD class with Blueprint-callable functions to toggle aim mode, crosshair visibility, and other UI elements in real time.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-col-section" id="toolimp">
+                <div class="respo-section1">
+                    <div class="respo-section-text">
+                        <h1>Boomerang implementation (DOT)</h1>
+                        <ul>
+                            <li>Developed a throwable boomerang-like tool with return mechanics, allowing players to throw and recall the object dynamically.</li>
+                            <li>Implemented collision detection and context-sensitive responses, including stopping movement and triggering VFX.</li>
+                            <li>Utilized a spline component to visualize and define the player's potential teleport path.</li>
+                            <li>Synchronized visual effects (Niagara) and audio (FMOD) for throw, impact, and return events.</li>
+                            <li>Enabled interaction with anchor points and other world objects, including special logic for activating UI elements (such as the DOT locator) and handling anchor-specific behaviors.</li>
+                        </ul>
+                    </div>
+                    <div class="respo-section-image">
+                        <video width="640" height="360" autoplay muted loop>
+                            <source src="images/shroombound/shroombound-aimandthrow.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-col-section" id="uiimp">
+                <div class="respo-section2">
+
+                    <div class="respo-section2-image">
+                        <div class="stacked-videos">
+                            <video autoplay muted loop>
+                                <source src="images/shroombound/shroombound-mainmenu.mp4" type="video/mp4">
+                            </video>
+                            <video autoplay muted loop>
+                                <source src="images/shroombound/shroombound-pausemenu.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </div>
+                    <div class="respo-section2-text">
+                        <h1>UI implementation</h1>
+                        <ul>
+                            <li>Designed and implemented the main menu, pause menu, and end screen using Unreal Motion Graphics (UMG), creating a cohesive and visually engaging UI that matches the game's stylized aesthetic.</li>
+                            <li>Developed a dynamic main menu featuring animated planet models and orbit paths, utilizing UMG widgets and custom shaders to create interactive navigation elements.</li>
+                            <li>Built in-game HUD elements (such as crosshairs, health/poison shader effects, and tutorial prompts).</li>
+                            <li>Used custom shaders to add polish to UI elements, including glowing effects, animated highlights, and dynamic feedback based on player actions or game state.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-col-section" id="animimp">
+                <div class="respo-section2">
+
+                    <div class="respo-section2-text">
+                        <h1>Animation Implementation</h1>
+                        <ul>
+                            <li>Implemented character animation using Unreal Engine's animation system, including state machines, animation blueprints, and montages for smooth transitions between actions.</li>
+                            <li>Combined multiple animation states, such as blending upper body aiming with lower body walking/running, to achieve fluid and responsive character movement.</li>
+                            <li>Used animation montages for special actions and events, allowing for modular and easily triggered animation sequences.</li>
+                            <li>Integrated aim offset and bone transform logic so the character's upper body rotates to match the camera angle while aiming, enhancing immersion and control.</li>
+                            <li>Created custom states for conditions like poison, ensuring the character's movement and idle animations reflect gameplay status.</li>
+                        </ul>
+                    </div>
+                    <div class="respo-section2-image">
+                        <video width="640" height="360" autoplay muted loop>
+                            <source src="images/shroombound/shroombound-animations.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-col-section" id="tutimp">
+                <div class="respo-section2">
+
+                    <div class="respo-section2-image">
+                        <video width="640" height="360" autoplay muted loop>
+                            <source src="images/shroombound/shrrombound-tutorial.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="respo-section2-text">
+                        <h1>Game Tutorialization</h1>
+                        <ul>
+                            <li>Improved game tutorialization after observing player confusion with different interaction types.</li>
+                            <li>Implemented an in-game popup system with a stylized shader effect that activates when players approach a new mechanic, clearly highlighting discoveries and providing immediate guidance.</li>
+                            <li>Designed a dynamic mushroom encyclopedia, accessible from the pause menu, which expands as players explore and encounter new mushroom types.</li>
+                            <li>The encyclopedia provides detailed entries and visuals for each discovered mushroom, helping players learn their functions and how to interact with them at their own pace.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!--PHOTO GALLERY-->
+
+            <div class="gray">
+
+                <div class="photo-gallery">
+
+                    <h1>Photos</h1>
+
+                    <div class="grid-wrapper">
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-photo1.png" alt="Shroombound Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-photo2.png" alt="Shroombound Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-photo3.png" alt="Shroombound Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-photo4.png" alt="Shroombound Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-photo5.png" alt="Shroombound Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-photo6.png" alt="Shroombound Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-photo7.png" alt="Shroombound Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-photo8.png" alt="Shroombound Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-photo9.png" alt="Shroombound Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-photo10.png" alt="Shroombound Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-photo11.png" alt="Shroombound Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/shroombound/shroombound-photo12.png" alt="Shroombound Screenshot">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+
+<!------Footer---------------->
+
+        <section class="footer">
+
+            <div class="footer-color">
+                <h3>Simone Cormier - Programmer and Designer</h3>
+                <p>simoneblcormier@gmail.com</p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/simone-cormier/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://simonecormier.itch.io/" target="_blank">
+                        <i class="fa-brands fa-itch-io"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+     </body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simone Cormier</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/a1b2553ec7.js" crossorigin="anonymous"></script>
+        
+        
+    </head>
+    
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html" class="header-logo-text">Simone Cormier</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html"> PORTFOLIO</a></li>
+                        <li><a href="about.html"> ABOUT ME</a></li>
+                        <li><a href="contact.html"> CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+        </section>
+
+        <section class="body">
+            <div class="content">
+                <div class="group-content">
+
+                    <div class="project-info">
+
+                        <div class="content-header">
+                            <h1>HLSL Shaders</h1>
+                        </div>
+
+                        <div class="overview-sections">
+                            <p>
+                                I developed HLSL shaders in Unity, including a dynamic Hologram Shader and a
+                                stylized Waterdrop Shader, to create captivating visual effects for interactive environments.
+                                These shaders leverage animated vertex displacement, rim lighting, and transparency to produce
+                                glowing, energy-like surfaces and holographic visuals.
+                            </p>
+                            <div class="video-container">
+                                <div class="stacked-videos">
+                                    <video autoplay muted loop>
+                                        <source src="images/shaders/waterdrop-shader.mp4" type="video/mp4">
+                                    </video>
+                                    <video autoplay muted loop>
+                                        <source src="images/shaders/hologram-shader.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="overview">
+
+                        <div class="responsibilities">
+
+                            <h2>Project Info</h2>
+
+                            <ul>
+                                <li><b>Project: </b>VFS Project</li>
+                                <li><b>Role: </b>Technical Artist, Shader Programmer</li>
+                                <li><b>Software: </b>Unity, HLSL/ShaderLab</li>
+                                <li><b>Programming Languages: </b>HLSL, ShaderLab, C#</li>
+
+                            </ul>
+
+                            <h2>Responsibilities</h2>
+
+                            <ul>
+                                <li>Developed a Hologram Shader using HLSL to create animated, transparent holographic effects with customizable color, rim lighting, and wave distortion, ideal for sci-fi and futuristic visuals.</li>
+                                <li>Created the Waterdrop Shader featuring dynamic rim lighting, fresnel-based transparency, and pulsing vertex animation for stylized, glowing energy effects.</li>
+                                <li>Implemented advanced shader properties for real-time control over color, animation speed, wave intensity, and transparency, enabling rapid iteration and artistic experimentation.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--SECTIONS-->
+        <div class="background-col-section" id="uisystem">
+            <div class="respo-section1">
+                <div class="respo-section-text">
+                    <h1>Hologram Shader Features</h1>
+                    <ul>
+                        <li>Animated horizontal wave distortion</li>
+                        <li>Customizable hologram and rim colors</li>
+                        <li>Adjustable transparency and scale</li>
+                        <li>Glowing rim effect for a sci-fi look</li>
+                    </ul>
+                </div>
+                <div class="respo-section-image">
+                    <div class="section-photo" style="max-width: 500px;">
+                        <img src="images/shaders/hologram-image.png" alt="Hologram shader Screenshot">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="background-col-section" id="prototyping">
+            <div class="respo-section2">
+
+                <div class="respo-section2-image">
+                    <div class="section-photo" style="max-width: 700px;">
+                        <img src="images/shaders/waterdrop-image.png" alt="Waterdrop shader Screenshot">
+                    </div>
+                </div>
+                <div class="respo-section2-text">
+                    <h1>Waterdrop Shader Features</h1>
+                    <ul>
+                        <li>Pulsing, wavy vertex animation using sine/cosine</li>
+                        <li>Dynamic rim lighting with fresnel-based alpha</li>
+                        <li>Emissive, glowing edge for magical or energy-based visuals</li>
+                        <li>Real-time control over rim intensity, power, and color</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        </section>
+
+        <!------Footer---------------->
+
+        <section class="footer">
+
+            <div class="footer-color">
+                <h3>Simone Cormier - Programmer and Designer</h3>
+                <p>simoneblcormier@gmail.com</p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/simone-cormier/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://simonecormier.itch.io/" target="_blank">
+                        <i class="fa-brands fa-itch-io"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+
+    </body>
+</html>

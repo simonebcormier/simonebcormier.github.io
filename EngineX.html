@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<style>
+    body {
+        background-color: #0f1f2e;
+        background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.02) 75%), linear-gradient(-45deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.02) 75%);
+        background-size: 20px 20px;
+    }
+</style>
+
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simone Cormier</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/a1b2553ec7.js" crossorigin="anonymous"></script>
+        
+        
+    </head>
+    
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html" class="header-logo-text">Simone Cormier</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html"> PORTFOLIO</a></li>
+                        <li><a href="about.html"> ABOUT ME</a></li>
+                        <li><a href="contact.html"> CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+        </section>
+
+        <section class="body">
+            <div class="content">
+                <div class="group-content">
+
+                    <div class="project-info">
+
+                        <div class="content-header">
+                            <h1>Custom C++ Engine - Brick Breaker</h1>
+                        </div>
+
+                        <div class="overview-sections">
+                            <p>
+                                We developed Brick Breaker using a custom C++ game engine. The game 
+                                features a menu scene and a main gameplay scene where the player controls a paddle to bounce a ball 
+                                and break bricks. The game includes both breakable(bricks) and non-breakable boxes(the paddle), with the player�s paddle
+                                and the ball each having their own collider systems. The objective is to clear all breakable bricks 
+                                to win, while avoiding letting the ball pass the paddle, which results in a loss. The game implements 
+                                robust collision detection, win/lose states, and dynamic ball physics for engaging gameplay.
+                            </p>
+                            <div class="video-container enginex-cropped-video-container">
+                                <video autoplay muted loop>
+                                    <source src="images/engineX/engineX-covervideo.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="overview">
+
+                        <div class="responsibilities">
+
+                            <h2>Project Info</h2>
+
+                            <ul>
+                                <li><b>Project: </b>VFS Project</li>
+                                <li><b>Role: </b>Programmer</li>
+                                <li><b>Software: </b>Custom Game Engine</li>
+                                <li><b>Programming Languages: </b>C++</li>
+
+                            </ul>
+
+                            <h2>Responsibilities</h2>
+
+                            <ul>
+                                <li>Implemented responsive paddle controls using A/D keys for smooth left and right movement</li>
+                                <li>
+                                    Developed and integrated collision logic for circle/box interactions, including; 
+                                    Ball and paddle collisions, ball and brick collisions, ball and game border collisions
+                                </li>
+                                <li>Programmed the ball to bounce off the paddle with direction and angle changes based on the hit position (center vs. edges), 
+                                enhancing gameplay skill and challenge</li>
+                                <li>
+                                    Ensured the ball spawns with a randomized downward force, creating varied and unpredictable game starts
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <!------Footer---------------->
+
+        <section class="footer">
+
+            <div class="footer-color">
+                <h3>Simone Cormier - Programmer and Designer</h3>
+                <p>simoneblcormier@gmail.com</p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/simone-cormier/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://simonecormier.itch.io/" target="_blank">
+                        <i class="fa-brands fa-itch-io"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+
+    </body>
+</html>

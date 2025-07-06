@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simone Cormier</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/a1b2553ec7.js" crossorigin="anonymous"></script>
+        
+        
+    </head>
+    
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html" class="header-logo-text">Simone Cormier</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html"> PORTFOLIO</a></li>
+                        <li><a href="about.html"> ABOUT ME</a></li>
+                        <li><a href="contact.html"> CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+        </section>
+
+        <section class="body">
+            <div class="cover-slipstream">
+
+                <div class="content">
+                    <div class="group-content">
+
+                        <div class="project-info">
+
+                            <div class="content-header">
+                                <h1>Slipstream</h1>
+                            </div>
+
+                            <div class="overview-sections">
+
+                                <h2>High Concept</h2>
+                                <p>
+                                    Slipstream is a 3D, third person, movement-based platformer where you play as a desert dweller with mechanical enhancements who protects what still remains of their ancient civilization from the attack of sandworms. The sandworm queen is heading straight to the last standing bastion of your people and the barrier that once surrounded the obelisk is down.
+                                    Now it is up to you to race against the worm, surfing through the dunes and collecting enough energy particles to power up the barrier and keep the memory of your people alive.
+                                </p>
+
+                                <div class="video-container">
+                                    <video width="640" height="360" autoplay muted loop>
+                                        <source src="images/slipstream/Slipstream30SecDemo.mp4" type="video/mp4">
+                                    </video>
+                                    <button onclick="window.open('https://al-ozorio.itch.io/slipstream','_blank')">
+                                        Itch.io
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="overview">
+
+                            <div class="responsibilities">
+
+                                <h2>Project Info</h2>
+
+                                <ul>
+                                    <li><b>Project: </b>VFS Team Project</li>
+                                    <li><b>Role: </b>Programmer</li>
+                                    <li><b>Engine: </b>Unity</li>
+                                    <li><b>Programming Languages: </b>C#</li>
+
+                                </ul>
+
+                                <h2>Responsibilities</h2>
+
+                                <ul>
+                                    <li>Gameplay implemetation</li>
+                                    <li id="link"><a href="#movementimp">Movement Implementation</a></li>
+                                    <li id="link"><a href="#parrysystem">Parry System</a></li>
+                                    <li id="link"><a href="#uiimp">UI implementation</a></li>
+                                    <li>Animation implementation</li>
+                                    <li id="link"><a href="#cutsceneimp">Cutscene design and implementation</a></li>
+                                    <li id="link"><a href="#animimp">VFX and animation design and implementation</a></li>
+                                    <li>Feature prototyping and iterations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--SECTIONS-->
+
+            <div class="background-col-section" id="movementimp">
+                <div class="respo-section1">
+                    <div class="respo-section-text">
+                        <h1>Movement Implementation</h1>
+                        <ul>
+                            <li>As a fast paced movement platformer, the movement feeling good to the player was our top priority when 
+                            starting this project</li>
+                            <li>An extra challenge was that the player was moving on a hoverboard so the movement had to feel airy and floaty</li>
+                            <li>I iterated on different movement functionalities and feels, prototyped different movement systems thorughout 
+                            the project and showed it to my team and playtesters for feedback until it felt right</li>
+                            <li>After a lot of iteration and changes we have movement in the game that feels smooth and fun to use</li>
+                            <li>Player can move with WASD freely in circles for sharp turning, and when moving forward at a fast velocity players can 
+                            use the mouse to rotate the player for smooth turning</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="respo-section-image">
+                        <video width="640" height="360" autoplay muted loop>
+                            <source src="images/slipstream/slipstreammovement.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-col-section" id="parrysystem">
+                <div class="respo-section2">
+
+                    <div class="respo-section2-image">
+                        <video width="640" height="360" autoplay muted loop>
+                            <source src="images/slipstream/slipstreamparry.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="respo-section2-text">
+                        <h1>Parry System</h1>
+                        <ul>
+                             <li>We wanted to add an extra challenge and insentive for the player during gameplay that worked with the 
+                            fast paced movement</li>
+                            <li>We came up with a parry system where players must parry powerups while moving at high speeds for temporary special abillities.
+                             There is a speed boost and a magnet effect to parry.</li>
+                            <li>I designed a system for parrying the powerups and the abilities stack up, sp if you collect more than one
+                            magnet powerup it adds extra time to the powerup, and you can have more than one powerup at the same time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-col-section" id="uiimp">
+                <div class="respo-section1">
+                    <div class="respo-section-text">
+                        <h1>UI implementation</h1>
+                        <ul>
+                           <li>I implemented the HUD UI and systems to go along with them for Slipstream</li>
+                           <li>To unlock the first portal to move to the second level, you have to collect 150 energy particles
+                            in your path. We have a meter that fills up accordingly</li>
+                            <li>The player has health hearts shown on the HUD that are lost when hitting obstacles and gained when 
+                            health items are picked up</li>
+                            <li>You are racing against the queen sandworm, so you must move fast. To keep track of how far the sandworm is compared
+                            to yourself, we have a timer at the top which increases as the sandworm gets closer to the goal</li>
+                        </ul>
+                    </div>
+                    <div class="respo-section-image">
+                        <div class="section-photo">
+                            <img src="images/slipstream/slipstream2.png" alt="Slipstream UI Screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-col-section" id="cutsceneimp">
+                <div class="respo-section2">
+
+                    <div class="respo-section2-image">
+                        <video width="640" height="360" autoplay muted loop>
+                            <source src="images/slipstream/slipstreamcutscene.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="respo-section2-text">
+                        <h1>Cutscene design and implementation</h1>
+                        <ul>
+                            <li>I designed and implemented the end cutscene for when you win and beat the sandworm to the finish line</li>
+                            <li>I created this using Unity Cinemachine and Timeline systems</li>
+                            <li>I implemented the camera movement, moving objects, sandowrm death and updated VFX during the cutscene
+                            as well as the end screen UI that tells the player how fast they beat the game</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-col-section" id="animimp">
+                <div class="respo-section2">
+
+                    <div class="respo-section2-text">
+                        <h1>VFX and animation design and implementation</h1>
+                        <ul>
+                           <li>With only one artist in our team and a big scope for a 2 month long project, I assisted our artist where I could 
+                            to programmatically make art effects</li>
+                            <li>I created a boost line effect VFX when the player gets a speed boost for them to feel fast</li>
+                            <li>For our tricks then the player double presses space, I created these though Unity Animation system. The player rotates 
+                            360 degrees in a randomly generated direction in the XYZ axis when they do a trick</li>
+                            <li>For our pistons that serve to squish and damage the player, as well as to launch the player up, I created a system to
+                            squish the player mesh for a few seconds when squished for the player to really feel the effect of a large piston landing on them</li>
+                        </ul>
+                    </div>
+                    <div class="respo-section2-image">
+                        <div class="side-by-side-videos">
+                            <video autoplay muted loop>
+                                <source src="images/slipstream/slipstreamsquish.mp4" type="video/mp4">
+                            </video>
+                            <video autoplay muted loop>
+                                <source src="images/slipstream/slipstreamtricks.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--PHOTO GALLERY-->
+
+            <div class="gray">
+
+                <div class="photo-gallery">
+
+                    <h1>Photos</h1>
+
+                    <div class="grid-wrapper">
+                        <div class="photo">
+                            <img src="images/slipstream/slipstream1.png" alt="Slipstream Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/slipstream/slipstream2.png" alt="Slipstream Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/slipstream/slipstream3.png" alt="Slipstream Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/slipstream/slipstream4.png" alt="Slipstream Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/slipstream/slipstream5.png" alt="Slipstream Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/slipstream/slipstream6.png" alt="Slipstream Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/slipstream/slipstream7.png" alt="Slipstream Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/slipstream/slipstream8.png" alt="Slipstream Screenshot">
+                        </div>
+                        <div class="photo">
+                            <img src="images/slipstream/slipstream9.png" alt="Slipstream Screenshot">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+
+<!------Footer---------------->
+
+        <section class="footer">
+
+            <div class="footer-color">
+                <h3>Simone Cormier - Programmer and Designer</h3>
+                <p>simoneblcormier@gmail.com</p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/simone-cormier/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://simonecormier.itch.io/" target="_blank">
+                        <i class="fa-brands fa-itch-io"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+     </body>
+
+</html>

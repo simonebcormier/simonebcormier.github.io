@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simone Cormier</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/a1b2553ec7.js" crossorigin="anonymous"></script>
+        
+        
+    </head>
+    
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html" class="header-logo-text">Simone Cormier</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html"> PORTFOLIO</a></li>
+                        <li><a href="about.html"> ABOUT ME</a></li>
+                        <li><a href="contact.html"> CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+        </section>
+
+        <section class="body">
+            <div class="cover-pokemon">
+
+                <div class="content">
+                    <div class="group-content">
+
+                        <div class="project-info">
+
+                            <div class="content-header">
+                                <h1>Space Shooter Prototype</h1>
+                            </div>
+
+                            <div class="overview-sections">
+
+                                <h2>Project Overview</h2>
+                                <p>
+                                 I developed a 2D space shooter in Unity, progressing through three distinct prototypes. Each iteration of the game focused on refining 
+                                    the core mechanics of the game such as the player movement, shooting, and the enemy behaviours. I used Unity's prefab system for rapid
+                                    prototyping, implemented multiple bullet and enemy types, and iterated on the game based on testing and feedback. This project demonstrates
+                                    my ability to design, implement and polish engaging gameplay using C# and Unity as well as rapid prototyping a simple game based on 
+                                    given parameters and ideas. 
+                                </p>
+
+                                <div class="video-container">
+                                    <video width="640" height="360" autoplay muted loop>
+                                        <source src="images/spaceshooter/spaceshootervideo.mp4" type="video/mp4">
+                                    </video>                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="overview">
+
+                            <div class="responsibilities">
+
+                                <h2>Project Info</h2>
+
+                                <ul>
+                                    <li><b>Project: </b>VFS Solo Project</li>
+                                    <li><b>Role: </b>Programmer</li>
+                                    <li><b>Engine: </b>Unity</li>
+                                    <li><b>Programming Languages: </b>C#</li>
+                                </ul>
+
+                                <h2>Responsibilities</h2>
+
+                                <ul>
+                                    <li>Implemented responsive player movement and shooting mechanics</li>
+                                    <li id="link"><a href="#powerupsystem">Powerups and Special Abilities</a></li>
+                                    <li>Implemented health and UI systems for health, special ability, score, game over</li>
+                                    <li>Enemy Design and Behaviour for three distinct enemy types</li>
+                                    <li id="link"><a href="#prototyping">Prototyping and iteration</a></li>
+                                    <li>Play testing and analysis of testing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--SECTIONS-->
+
+            <div class="background-col-section" id="powerupsystem">
+                <div class="respo-section1">
+                    <div class="respo-section-text">
+                        <h1>Powerups and Special Abilities</h1>
+                        <ul>
+                            <li>Implemented a score-driven power-up bar that visually tracks how much you need to gain the speical ability attack</li>
+                            <li>Developed a player-triggered special attack that fires multiple projectiles in all directions for strategic play</li>
+                            <li>Added a combo system tha rewards players with bonus points for defeating three different colored enemies in succession,
+                            encouraging strategic and varied gameplay</li>
+                            <li>Balanced power-up effects and recharge rate based on playtesting and player feedback to ensure a balance between challenging and rewarding gameplay</li>
+                        </ul>
+                    </div>
+                    <div class="respo-section-image">
+                        <video width="640" height="360" autoplay muted loop>
+                            <source src="images/spaceshooter/spaceshooterspecial.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-col-section" id="prototyping">
+                <div class="respo-section2">
+
+                    <div class="respo-section2-image">
+                        <div class="section-photo" style="max-width: 400px;">
+                            <img src="images/spaceshooter/spaceshootercover.png" alt="SpaceShooter Screenshot">
+                        </div>
+                    </div>
+                    <div class="respo-section2-text">
+                        <h1>Prototyping and Iteration</h1>
+                        <ul>
+                            <li>Researched and analyzed existing arcade shooters to inform my inital design and feature implementations</li>
+                            <li>Developed and tested thrree distinct prototpyes, each addressing specific gameplay, balancing 
+                            and usability issues identified thorugh playtesting.</li>
+                            <li>Incorporaed player feedback at every stage, refining mechanics such as enemy variety, power-ups, health systems and scoring</li>
+                            <li>Rapidly implemented and adjusted new features such as combo bonuses, enemy behaviours and powerup activation based on 
+                            tester suggestions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+       </section>
+
+<!------Footer---------------->
+
+        <section class="footer">
+
+            <div class="footer-color">
+                <h3>Simone Cormier - Programmer and Designer</h3>
+                <p>simoneblcormier@gmail.com</p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/simone-cormier/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://simonecormier.itch.io/" target="_blank">
+                        <i class="fa-brands fa-itch-io"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+     </body>
+
+</html>
