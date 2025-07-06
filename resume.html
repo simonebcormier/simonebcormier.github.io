@@ -19,19 +19,19 @@
             font-size: 2.6rem;
             font-weight: 700;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 32px;
             letter-spacing: 1px;
         }
         .resume-section-title {
             font-size: 2rem;
             font-weight: 700;
-            margin: 48px 0 24px 0;
+            margin: 16px 0 12px 0;
             border-bottom: 3px solid #4a90e2;
             display: inline-block;
             padding-bottom: 6px;
         }
         .resume-entry {
-            margin-bottom: 40px;
+            margin-bottom: 22px;
             border: 2px solid #4a90e2;
             border-radius: 14px;
             padding: 24px 24px 16px 24px;
@@ -102,6 +102,51 @@
             .resume-title { font-size: 2rem; }
             .resume-section-title { font-size: 1.3rem; }
             .resume-entry-title { font-size: 1.1rem; }
+        }
+        .resume-skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin: 40px 0 0 0;
+            background: none;
+        }
+        .resume-skill-col {
+            background: rgba(30, 50, 90, 0.10);
+            border-radius: 12px;
+            padding: 20px 18px 18px 18px;
+            border: 1.5px solid #284e7a;
+            min-width: 0;
+        }
+        .resume-skill-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #4a90e2;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        .resume-skill-school {
+            font-size: 1.05rem;
+            color: #fff;
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+        .resume-skill-list {
+            list-style: disc inside;
+            color: #e0e6ed;
+            font-size: 1.02rem;
+            margin: 0;
+            padding-left: 16px;
+        }
+        .resume-skill-list li {
+            margin-bottom: 7px;
+            line-height: 1.5;
+        }
+        @media (max-width: 1000px) {
+            .resume-skills-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .resume-skills-grid { grid-template-columns: 1fr; gap: 18px; }
+            .resume-skill-col { padding: 14px 8px; }
         }
     </style>
 </head>
@@ -211,6 +256,49 @@
                     Read More <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
+        </div>
+
+        <div class="resume-section-title">Education</div>
+        <div class="resume-entry">
+            <div class="resume-skill-school">
+                <strong>Vancouver Film School</strong><br>
+                Programming for Games, Web & Mobile<br>
+                Aug 2024 – Aug 2025
+            </div>
+            <div class="resume-skill-school" style="margin-top: 18px;">
+                <strong>Carleton University</strong><br>
+                Bachelor of Information Technology, Interactive Multimedia and Design<br>
+                Sept 2018 – May 2023
+            </div>
+        </div>
+
+        <div class="resume-section-title">Skills</div>
+        <div class="resume-entry">
+            <div class="resume-skill-title">Engines</div>
+            <ul class="resume-skill-list">
+                <li>Unreal Engine 5</li>
+                <li>Unity</li>
+            </ul>
+            <div class="resume-skill-title" style="margin-top: 18px;">Languages</div>
+            <ul class="resume-skill-list">
+                <li>HLSL</li>
+                <li>ShaderLab</li>
+                <li>Unreal Blueprinting / Materials</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>HTML, CSS, JavaScript, Node, VUE</li>
+                <li>Kotlin, Swift</li>
+            </ul>
+            <div class="resume-skill-title" style="margin-top: 18px;">Software</div>
+            <ul class="resume-skill-list">
+                <li>Source Control: Git</li>
+                <li>Jira, Hack and Plan</li>
+                <li>Adobe Suite (Photoshop, Illustrator, Adobe XD)</li>
+                <li>Figma</li>
+                <li>Maya</li>
+                <li>Miro</li>
+            </ul>
         </div>
     </main>
     <section class="footer">
