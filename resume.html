@@ -163,7 +163,7 @@
                     <li><a href="contact.html"> CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </nav>
     </section>
     <main class="resume-main">
@@ -182,7 +182,7 @@
                 <span class="resume-entry-date">Feb 2025 - Current</span>
             </div>
             <ul class="resume-entry-bullets">
-                <li>Developed UI poison vignette effect and bounce mushroom visual effect using Unreal Engine’s material system and textures to support immersive UI and gameplay feedback</li>
+                <li>Developed UI poison vignette effect and bounce mushroom visual effect using Unreal Engine's material system and textures to support immersive UI and gameplay feedback</li>
                 <li>Implemented all front end, main menu, end menu, pause menu, and HUD using UMG and shaders for enhanced visual fidelity and responsiveness</li>
                 <li>Integrated VFX particles and animations into the game</li>
                 <li>Designed and implemented UI animations for crosshair and text popups using Unreal's animation tools to improve usability and guide player attention</li>
@@ -228,7 +228,7 @@
                 <span class="resume-entry-date">Oct 2024 – Feb 2025</span>
             </div>
             <ul class="resume-entry-bullets">
-                <li>Designed and implemented character and gameplay VFX particles to create speed lines using Unity’s Shader Graph to enhance visual feedback and player immersion</li>
+                <li>Designed and implemented character and gameplay VFX particles to create speed lines using Unity's Shader Graph to enhance visual feedback and player immersion</li>
                 <li>Created character trick animations using Unity's animation system and scripting to support responsive gameplay</li>
                 <li>Implemented functional HUD systems such as health and special ability bars and integrated win/lose screen UI elements to support gameplay feedback and state transitions</li>
             </ul>
@@ -321,5 +321,18 @@
             </div>
         </div>
     </section>
+    <script>
+    function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        if (navLinks.style.right === '0px') {
+            navLinks.style.right = '-200px';
+        } else {
+            navLinks.style.right = '0';
+        }
+    }
+    function hideMenu() {
+        document.getElementById('navLinks').style.right = '-200px';
+    }
+    </script>
 </body>
 </html> 

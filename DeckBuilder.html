@@ -29,7 +29,7 @@
                     </ul>
                 </div>
 
-                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
             </nav>
 
         </section>
@@ -170,6 +170,20 @@
             </div>
 
         </section>
+
+        <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            if (navLinks.style.right === '0px') {
+                navLinks.style.right = '-200px';
+            } else {
+                navLinks.style.right = '0';
+            }
+        }
+        function hideMenu() {
+            document.getElementById('navLinks').style.right = '-200px';
+        }
+        </script>
 
      </body>
 
