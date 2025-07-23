@@ -111,10 +111,10 @@ nav img{
 }
 
 .head-image {
-    background-color: #0f1f2e;
-    background: linear-gradient(135deg, #0f1f2e 0%, #1e3a5f 100%);
-    padding-top: 150px;
-    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 270px;
+    padding-bottom: 230px;
 }
 
     .head-image h1 {
